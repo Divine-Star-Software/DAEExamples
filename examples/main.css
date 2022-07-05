@@ -1,0 +1,217 @@
+body {
+  font-family: "Lucida Console";
+  background: black;
+  --main: rgba(162, 5, 224, 0.925);
+  --font-color: rgba(162, 5, 224, 0.925);
+  --font-fmaily: "Lucida Console";
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.logo-container {
+  position: absolute;
+  transform: translate(-450%, 0%);
+  top: 50px;
+  left: 50%;
+}
+
+.dae-logo {
+  color: rgba(162, 5, 224, 0.925);
+  top: 30px;
+  text-align: center;
+  font-size: 50px;
+  width: 100%;
+}
+
+.dae-version {
+  color: rgba(119, 7, 163, 0.925);
+  text-align: center;
+  font-size: 20px;
+}
+.dae-desc {
+  color: rgba(119, 7, 163, 0.925);
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  max-width: 800px;
+  font-size: 20px;
+  line-height: 40px;
+  border-bottom: 5px solid rgba(119, 7, 163, 0.925);
+}
+
+.dae-info-title {
+  color: rgba(119, 7, 163, 0.925);
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  max-width: 800px;
+  font-size: 25px;
+  line-height: 20px;
+}
+.dae-info {
+  background: rgba(119, 7, 163, 0.925);
+  color: black;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  font-size: 15px;
+  line-height: 20px;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+
+.logo-container svg {
+  fill: rgba(162, 5, 224, 0.925);
+  animation: spin 8s linear infinite;
+}
+
+.main-screen {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  left: 5%;
+  z-index: 1;
+  background: rgba(0, 0, 0, .7);
+}
+
+
+.home-screen-button {
+  width: 100%;
+  border: 1px solid rgba(119, 7, 163, 0.925);
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.home-screen-button button {
+  background: black;
+  color: var(--font-color);
+  font-family: var(--font-fmaily);
+  font-size: 25px;
+  transition: 0.5s;
+}
+
+.home-screen-button button:hover {
+  color: black;
+  background-color: var(--font-color);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.home-screen-button button.active {
+  color: black;
+  background-color: var(--font-color);
+}
+
+.screen-container {
+  max-height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: 1px solid rgba(119, 7, 163, 0.925);
+}
+.screen-title {
+  text-align: center;
+  color: rgba(119, 7, 163, 0.925);
+}
+.screen-active {
+  display: block;
+}
+.screen-inactive {
+  display: none;
+}
+
+.audio-list {
+
+}
+
+.audio-track {
+  color: var(--font-color);
+  border-top: 5px solid rgba(119, 7, 163, 0.925);
+  border-bottom: 5px solid rgba(119, 7, 163, 0.925);
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.audio-track:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.audio-track-title {
+  font-size: 30px;
+  border-bottom: 3px solid rgba(119, 7, 163, 0.925);
+}
+.audio-track-play {
+  font-size: 25px;
+  transition: 0.5s;
+  border-bottom: 3px dashed rgba(119, 7, 163, 0.925);
+}
+.audio-track-play:hover {
+  background: rgba(119, 7, 163, 0.925);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.audio-track-play p::before {
+  content: "\25BA";
+}
+
+.audio-track-data {
+  transition: 0.5s;
+}
+.audio-track-data:hover {
+  background: rgba(119, 7, 163, 0.925);
+  cursor: pointer;
+}
+
+.display-inactive {
+  display: none;
+}
+.display-active {
+  display: block;
+  border-top: 3px dashed rgba(119, 7, 163, 0.925);
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  outline: none;
+}
+input:focus {
+  outline: none;
+}
+select {
+  outline: none;
+}
+select:focus {
+  outline: none;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(95, 0, 133, 0.925);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(162, 5, 224, 0.925);
+  border: 3px solid rgba(191, 30, 255, 0.925);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate3d(0, -1, 0, 0deg);
+  }
+  100% {
+    transform: rotate3d(0, -1, 0, 360deg);
+  }
+}

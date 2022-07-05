@@ -1,0 +1,29 @@
+{
+    "sources": [
+        {
+            "dir": "D:/DSSoftware/APPS/divineaudioengine/electron/app",
+            "fileExtensions": [
+                "js","html","css"
+            ],
+            "id": "main"
+        }
+    ],
+    "outputs": [
+        {
+            "dir": "D:/DSSoftware/APPS/dae-examples/",
+            "sourceID": "main",
+            "codeSection": [
+                "all"
+            ],
+            "keepComments": true
+        }
+
+    ],
+    "codeSections": {
+        "all": {
+            "start": "@ds",
+            "end": "@ds"
+        }
+
+    }
+}

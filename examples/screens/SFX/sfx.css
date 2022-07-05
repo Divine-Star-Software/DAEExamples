@@ -1,0 +1,33 @@
+.sfx-screen-buttons {
+  width: 100%;
+  border: 1px solid rgba(119, 7, 163, 0.925);
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.sfx-screen-buttons button {
+  background: black;
+  color: var(--font-color);
+  font-family: var(--font-fmaily);
+  font-size: 25px;
+  transition: 0.5s;
+}
+
+.sfx-screen-buttons button:hover {
+  color: black;
+  background-color: var(--font-color);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.sfx-screen-buttons button.active {
+  color: black;
+  background-color: var(--font-color);
+}
+
+
+
+
+.dir-display {
+  color: var(--font-color);
+}
